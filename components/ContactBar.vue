@@ -1,6 +1,6 @@
 <template>
-  <div class="contact__bar_contain">
-    <div class="address__wrap">
+  <section id="contact__bar" class="">
+    <div>
       <h4>
         <a
           href="https://maps.app.goo.gl/FbGDrxqqycmP26HM6"
@@ -17,14 +17,10 @@
         </a>
       </h4>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss">
-.contact__bar {
-  width: 100%;
-  display: flex;
-  color: #b8b8b8;
-  padding: 15px;
+#contact__bar {
 }
 </style>

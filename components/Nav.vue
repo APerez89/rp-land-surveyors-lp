@@ -1,6 +1,6 @@
 <template>
-  <div class="nav__contain">
-    <div class="nav__wrap">
+  <nav id="nav">
+    <div class="">
       <div class="logo__wrap">
         <h2>
           <a href="/">
@@ -23,5 +23,5 @@
         </li>
       </ul>
     </div>
-  </div>
+  </nav>
 </template>

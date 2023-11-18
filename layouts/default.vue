@@ -5,7 +5,4 @@
 </template>
 
 <style>
-div {
-  width: 100%;
-}
 </style>

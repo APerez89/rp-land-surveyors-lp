@@ -1,9 +1,7 @@
 <template>
   <div class="app__contain">
-    <NuxtLayout name="default">
-      <div class="top__bar">
-        <ContactBar />
-      </div>
+    <NuxtLayout name="default" class="default">
+      <ContactBar />
       <Nav />
       <NuxtPage />
       <Footer />
@@ -11,7 +9,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,12 +18,5 @@
 
 :root {
   --max-width: 1300px;
-}
-
-.app__contain {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
 }
 </style>

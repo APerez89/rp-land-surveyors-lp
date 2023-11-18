@@ -1,16 +1,15 @@
 <template>
-  <div class="footer__contain">
-    <div class="footer__content">
+  <footer id="footer">
+    <div class="">
       SugarFooter
     </div>
-  </div>
+  </footer>
 </template>
 
 <style lang="scss">
-.footer__contain {
+#footer {
+  height: 150px;
   background-color: #0e111a;
-  .footer__content {
-    max-width: var(--max-width);
-  }
+  color: #e7e7e7;
 }
 </style>
