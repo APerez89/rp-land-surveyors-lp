@@ -1,12 +1,24 @@
 <template>
   <div class="nav__contain">
     <div class="nav__wrap">
+      <div class="logo__wrap">
+        <h2>
+          <a href="/">Richard W. Plain</a>
+        </h2>
+      </div>
       <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
-        <li></li>
+        <li>
+          <nuxt-link to="about">About</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="services">Services</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="projects">Projects</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="contact">Contact</nuxt-link>
+        </li>
       </ul>
     </div>
   </div>

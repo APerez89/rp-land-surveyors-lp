@@ -1,6 +1,10 @@
 <template>
   <div>
     <NuxtLayout name="default">
+      <div class="top__bar">
+        <ContactBar />
+      </div>
+      <Nav />
       <NuxtPage />
     </NuxtLayout>
   </div>
