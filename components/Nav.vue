@@ -3,7 +3,9 @@
     <div class="nav__wrap">
       <div class="logo__wrap">
         <h2>
-          <a href="/">Richard W. Plain</a>
+          <a href="/">
+            <img src="main-logo-small.webp" alt="">
+          </a>
         </h2>
       </div>
       <ul>
