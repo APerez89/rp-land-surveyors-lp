@@ -1,27 +1,54 @@
 <template>
-  <nav id="nav">
-    <div class="">
+  <nav id="nav" class="main__contain">
+    <div class="nav__wrap">
       <div class="logo__wrap">
-        <h2>
-          <a href="/">
-            <img src="main-logo-small.webp" alt="">
-          </a>
-        </h2>
+        <a href="/">
+          <img src="main-logo-small.webp" alt="">
+        </a>
       </div>
-      <ul>
-        <li>
+      <div class="nav__items">
+        <div class="item">
           <nuxt-link to="about">About</nuxt-link>
-        </li>
-        <li>
+
+        </div>
+        <div class="item">
           <nuxt-link to="services">Services</nuxt-link>
-        </li>
-        <li>
+
+        </div>
+        <div class="item">
           <nuxt-link to="projects">Projects</nuxt-link>
-        </li>
-        <li>
+
+        </div>
+        <div class="item">
           <nuxt-link to="contact">Contact</nuxt-link>
-        </li>
-      </ul>
+
+        </div>
+      </div>
     </div>
   </nav>
 </template>
+
+<style lang="scss">
+#nav {
+  .nav__wrap {
+    width: 100%;
+    display: flex;
+    max-width: var(--max-width);
+    justify-content: space-between;
+
+    .nav__items {
+      display: inline-flex;
+      align-items: flex-end;
+
+      .item {
+        display: contents;
+
+        a {
+          padding: 10px 25px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+</style>
