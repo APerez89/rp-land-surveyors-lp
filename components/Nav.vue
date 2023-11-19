@@ -2,9 +2,9 @@
   <nav id="nav" class="main__contain">
     <div class="nav__wrap">
       <div class="logo__wrap">
-        <a href="/">
+        <nuxt-link to="/">
           <img src="main-logo-small.webp" alt="">
-        </a>
+        </nuxt-link>
       </div>
       <div class="nav__items">
         <div class="item">
