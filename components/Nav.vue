@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <nav id="nav" class="main__contain">
     <div class="nav__wrap">
@@ -28,7 +31,7 @@
   </nav>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #nav {
   .nav__wrap {
     width: 100%;
