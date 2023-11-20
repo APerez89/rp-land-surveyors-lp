@@ -1,7 +1,7 @@
 <template>
   <div class="app__contain">
     <NuxtLayout name="default" class="app__wrap">
-      <ContactBar />
+      <!-- <ContactBar /> -->
       <Nav />
       <NuxtPage />
       <Footer />
@@ -21,6 +21,7 @@
   --rp-black: #232323;
   --off-white: #efeff1;
   --light-white: #f6f6f6;
+  --gray: #939393;
 }
 
 .main__contain {
