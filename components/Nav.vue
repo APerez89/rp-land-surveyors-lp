@@ -44,7 +44,14 @@
             <nuxt-link to="about">About</nuxt-link>
           </div>
           <div class="item">
-            <nuxt-link to="services">Services</nuxt-link>
+            <nuxt-link to="services" class="services">
+              Services
+              <div class="icon">
+                <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path clip-rule="evenodd" fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"></path>
+                </svg>
+              </div>
+            </nuxt-link>
           </div>
           <div class="item">
             <nuxt-link to="projects">Projects</nuxt-link>
@@ -74,7 +81,7 @@
     width: 17px;
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 7px;
     color: var(--gray);
   }
 
@@ -116,7 +123,14 @@
           a {
             padding: 10px 25px;
             text-decoration: none;
-            border: 1px solid red;
+          }
+
+          .services {
+            display: inline-flex;
+
+            .icon {
+              margin: 0px 0px 0px 10px;
+            }
           }
         }
       }

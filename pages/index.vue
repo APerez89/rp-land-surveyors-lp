@@ -16,7 +16,7 @@
   .index__wrap {
     width: 100%;
     max-width: var(--max-width);
-    border: 1px solid red;
+    // border: 1px solid red;
   }
 }
 </style>
