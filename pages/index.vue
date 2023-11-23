@@ -5,6 +5,8 @@
       <h2>Land Surveyors</h2>
       <h4>Since 1978</h4>
     </div>
+    <!-- <Test />
+    <TestTwo /> -->
   </div>
 </template>
 
@@ -13,6 +15,7 @@
 
 <style lang="scss" scoped>
 #index__contain {
+  height: 100%;
   .index__wrap {
     width: 100%;
     max-width: var(--max-width);

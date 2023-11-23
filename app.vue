@@ -4,6 +4,8 @@
       <!-- <ContactBar /> -->
       <Nav />
       <NuxtPage />
+      <Test />
+      <TestTwo />
       <Footer />
     </NuxtLayout>
     <!-- calendar -->
@@ -64,6 +66,7 @@
   min-height: 100vh;
   // border: 1px solid red;
   background-color: var(--light-white);
+  overflow: hidden;
 
   .app_wrap {
     display: flex;

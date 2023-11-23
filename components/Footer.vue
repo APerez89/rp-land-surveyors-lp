@@ -12,9 +12,6 @@
 
 <style lang="scss" scoped>
 #footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
   height: 150px;
   background-color: #0e111a;
   color: #e7e7e7;
