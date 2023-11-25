@@ -23,7 +23,8 @@
     width: 100%;
     position: relative;
     img {
-      transform: rotate(15deg);
+      // transform-style: preserve-3d;
+      transform: rotateY(180deg) rotate(15deg);
     }
   }
 }

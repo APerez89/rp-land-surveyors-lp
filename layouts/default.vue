@@ -37,6 +37,9 @@
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -45,7 +48,8 @@
 :root {
   --max-width: 1300px;
   --rp-red: #ec2c2c;
-  --rp-black: #232323;
+  --rp-light-red: #e74949;
+  --not-black: #232323;
   --off-white: #efeff1;
   --light-white: #f6f6f6;
   --gray: #939393;

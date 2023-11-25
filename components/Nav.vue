@@ -85,8 +85,6 @@ let active = true;
 </template>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap');
-
 #nav {
   font-family: 'Raleway', sans-serif;
 
