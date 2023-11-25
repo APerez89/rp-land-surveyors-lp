@@ -1,12 +1,10 @@
 <template>
   <div id="index__contain" class="main__contain">
-    <div class="index__wrap">
-      <h1>Richard W. Plain</h1>
-      <h2>Land Surveyors</h2>
-      <h4>Since 1978</h4>
+    <div class="main__wrap">
+      <Welcome />
+      <Test />
+      <TestTwo />
     </div>
-    <!-- <Test />
-    <TestTwo /> -->
   </div>
 </template>
 
@@ -16,9 +14,10 @@
 <style lang="scss" scoped>
 #index__contain {
   height: 100%;
-  .index__wrap {
+  .main__wrap {
     width: 100%;
-    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
     // border: 1px solid red;
   }
 }
