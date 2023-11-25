@@ -6,7 +6,7 @@ defineProps<{
 </script>
 
 <template>
-  <div id="button__contain" class="main__contain">
+  <div id="button__contain">
     <div class="button__wrapper">
       <nuxt-link :to="link">
         {{ message }}
@@ -20,10 +20,9 @@ defineProps<{
   margin-top: 25px;
   .button__wrapper {
     width: 100%;
-    position: relative;
+    display: flex;
     
     a {
-      position: absolute;
       font-family: 'Raleway', sans-serif;
       color: var(--light-white);
       font-size: 1.1rem;

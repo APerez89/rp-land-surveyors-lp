@@ -2,7 +2,8 @@
   <div id="index__contain" class="main__contain">
     <div class="main__wrap">
       <Welcome />
-      <Test />
+      <WhyRP />
+      <Divider />
       <TestTwo />
     </div>
   </div>

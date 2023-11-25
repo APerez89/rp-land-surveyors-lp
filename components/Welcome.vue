@@ -36,7 +36,7 @@
         margin-bottom: 15px;
         
         h1 {
-          font-size: 3.5rem;
+          font-size: 4rem;
           font-weight: 700;
         }
   

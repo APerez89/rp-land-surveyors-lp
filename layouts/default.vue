@@ -63,9 +63,13 @@
   // border: 1px solid red;
 }
 
+.highlight {
+  color: var(--rp-red);
+}
+
 .app__contain {
   min-height: 100vh;
-  // border: 1px solid red;
+  font-family: 'Raleway', sans-serif;
   background-color: var(--light-white);
   overflow: hidden;
 
