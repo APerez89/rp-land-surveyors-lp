@@ -99,11 +99,6 @@ let active = true;
       color: var(--dark-gray);
     }
   }
-
-  .router-link-exact-active {
-    color: var(--dark-gray);
-    border-bottom: 1px solid var(--dark-gray);
-  }
   
   .icon {
     width: 17px;
@@ -138,13 +133,11 @@ let active = true;
 
       .nav__contact {
         display: flex;
-        // padding-bottom: 10px;
       }
       .nav__items {
         display: inline-flex;
         align-items: flex-end;
         position: relative;
-        // border: 1px solid red;
   
         .item {
           display: contents;
@@ -180,6 +173,10 @@ let active = true;
             }
           }
 
+          .router-link-exact-active {
+            color: var(--dark-gray);
+            border-bottom: 1px solid var(--dark-gray);
+          }
           .services__wrap {
             display: none;
           }
