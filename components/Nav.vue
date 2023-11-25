@@ -1,11 +1,11 @@
 <script setup lang="ts">
 const servicesList = [
-  'a-2/zoning location survey',
-  'topographic survey map',
-  'staking property',
-  'elevation certificates',
-  'map of property',
-  'outline boundary'
+  'A-2/Zoning Location Survey',
+  'Topographic Survey Map',
+  'Staking Property',
+  'Elevation Certificates',
+  'Map Of Property',
+  'Outline Boundary'
 ]
 </script>
 
@@ -53,16 +53,16 @@ const servicesList = [
             <nuxt-link to="about">About</nuxt-link>
           </div>
           <div class="item">
-            <div class="services__link">
-              <nuxt-link to="services" class="services">
-                Services
-                <div class="icon">
-                  <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path clip-rule="evenodd" fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"></path>
-                  </svg>
-                </div>
-              </nuxt-link>
-            </div>
+            <!-- <div class="services__link">
+            </div> -->
+            <nuxt-link to="services" class="services">
+              Services
+              <div class="icon">
+                <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path clip-rule="evenodd" fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"></path>
+                </svg>
+              </div>
+            </nuxt-link>
             <div class="services__wrap">
               <div v-for="(service, index) in servicesList" :key="index" class="services__item">
                 <nuxt-link to="/">{{ service }}</nuxt-link>
@@ -135,6 +135,7 @@ const servicesList = [
       .nav__items {
         display: inline-flex;
         align-items: flex-end;
+        position: relative;
         // border: 1px solid red;
   
         .item {
@@ -143,6 +144,35 @@ const servicesList = [
           a {
             padding: 10px 25px;
             text-decoration: none;
+          }
+
+          &:hover {
+            .services__wrap {
+              opacity: 1;
+              display: flex;
+              flex-direction: column;
+              padding: 15px;
+              position: absolute;
+              top: 40px;
+              right: 105px;
+              background-color: var(--light-white);
+              box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+              z-index: 1;
+  
+              .services__item {
+                padding: 10px 0px;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+  
+                a {
+                  padding: 0px 10px;
+                  letter-spacing: 2px;
+                }
+              }
+            }
+          }
+
+          .services__wrap {
+            display: none;
           }
 
           .services {
