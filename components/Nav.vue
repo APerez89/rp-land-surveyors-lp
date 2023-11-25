@@ -7,6 +7,8 @@ const servicesList = [
   'Map Of Property',
   'Outline Boundary'
 ]
+
+let active = true;
 </script>
 
 <template>
@@ -50,19 +52,20 @@ const servicesList = [
 
         <div class="nav__items">
           <div class="item">
+            <nuxt-link to="/">Home</nuxt-link>
+          </div>
+          <div class="item">
             <nuxt-link to="about">About</nuxt-link>
           </div>
           <div class="item">
-            <!-- <div class="services__link">
-            </div> -->
-            <nuxt-link to="services" class="services">
+            <span to="services" class="services">
               Services
               <div class="icon">
                 <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path clip-rule="evenodd" fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"></path>
                 </svg>
               </div>
-            </nuxt-link>
+            </span>
             <div class="services__wrap">
               <div v-for="(service, index) in servicesList" :key="index" class="services__item">
                 <nuxt-link to="/">{{ service }}</nuxt-link>
@@ -87,7 +90,7 @@ const servicesList = [
 #nav {
   font-family: 'Raleway', sans-serif;
 
-  a {
+  a, .services {
     color: var(--gray);
     letter-spacing: 1px;
     // font-weight: 400;
@@ -95,6 +98,11 @@ const servicesList = [
     &:hover {
       color: var(--dark-gray);
     }
+  }
+
+  .router-link-exact-active {
+    color: var(--dark-gray);
+    border-bottom: 1px solid var(--dark-gray);
   }
   
   .icon {
@@ -141,8 +149,9 @@ const servicesList = [
         .item {
           display: contents;
   
-          a {
-            padding: 10px 25px;
+          a, .services {
+            margin: 0px 10px;
+            padding: 10px;
             text-decoration: none;
           }
 
@@ -153,7 +162,7 @@ const servicesList = [
               flex-direction: column;
               padding: 15px;
               position: absolute;
-              top: 40px;
+              top: 35px;
               right: 105px;
               background-color: var(--light-white);
               box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
@@ -180,6 +189,10 @@ const servicesList = [
 
             .icon {
               margin: 0px 0px 0px 10px;
+            }
+
+            &:hover {
+              cursor: pointer;
             }
           }
         }
