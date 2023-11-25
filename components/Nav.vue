@@ -14,7 +14,7 @@ const servicesList = [
     <div class="nav__wrap">
       <div class="logo__wrap">
         <nuxt-link to="/">
-          <img src="main-logo-small.png" alt="">
+          <img src="../public/main-logo-small.png" alt="">
         </nuxt-link>
       </div>
       <div class="right__nav">
