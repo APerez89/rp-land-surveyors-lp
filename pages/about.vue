@@ -8,3 +8,12 @@
     </div>
   </section>
 </template>
+
+<style lang="scss" scoped>
+#about {
+  .about__wrap {
+    width: 100%;
+    max-width: var(--max-width);
+  }
+}
+</style>

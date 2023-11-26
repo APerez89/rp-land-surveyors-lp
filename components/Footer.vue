@@ -24,7 +24,7 @@ const getYear = new Date().getFullYear();
 
 <style lang="scss" scoped>
 #footer {
-  background-color: #0e111a;
+  background-color: var(--dark-blue);
   color: var(--light-white);
 
   .footer__wrap {
@@ -42,7 +42,7 @@ const getYear = new Date().getFullYear();
       .footer__bottom {
         display: flex;
         justify-content: center;
-        
+
         a {
           text-decoration: none;
           color: var(--light-white);

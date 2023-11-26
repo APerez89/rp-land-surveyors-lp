@@ -1,8 +1,11 @@
 <template>
   <div id="projects__completed" class="main__contain">
     <div class="projects__wrap">
-      <div class="projects">
+      <div class="projects__left">
         <h4>Projects Completed</h4>
+      </div>
+      <div class="projects__right">
+        <img src="../public/theodolite_trip.png" alt="AI Generated Theodolite on a tripod">
       </div>
     </div>
 
@@ -15,6 +18,15 @@
   .projects__wrap {
     width: 100%;
     max-width: var(--max-width);
+    display: flex;
+
+    .projects__left {}
+    .projects__right {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 </style>

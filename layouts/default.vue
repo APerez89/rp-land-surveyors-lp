@@ -1,6 +1,5 @@
 <template>
   <div class="app__contain">
-      <!-- <ContactBar /> -->
       <Nav />
       <slot />
       <Footer />
@@ -29,6 +28,7 @@
   --light-white: #f6f6f6;
   --gray: #939393;
   --dark-gray: #717171;
+  --dark-blue: #0e111a;
 }
 
 .main__contain {
