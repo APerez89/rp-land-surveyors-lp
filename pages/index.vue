@@ -4,7 +4,7 @@
       <Welcome />
       <WhyRP />
       <Divider />
-      <TestTwo />
+      <ProjectsCompleted />
     </div>
   </div>
 </template>

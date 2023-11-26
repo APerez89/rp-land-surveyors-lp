@@ -20,8 +20,6 @@
 
 <style lang="scss" scoped>
 #why__contain {
-  width: 100%;
-  height: 100%;
   background-color: var(--off-white);
   font-family: 'Montserrat', sans-serif;
 
@@ -41,7 +39,6 @@
         position: inherit;
         transform: rotateY(180deg) rotate(15deg);
         left: -150px;
-        top: 85px;
       }
     }
 

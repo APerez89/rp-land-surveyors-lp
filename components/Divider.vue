@@ -19,7 +19,7 @@
 
     h4 {
       font-size: 1.6rem;
-      font-weight: 200;
+      font-weight: 300;
     }
 
     .rps {

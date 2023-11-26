@@ -15,7 +15,6 @@
   height: 150px;
   background-color: #0e111a;
   color: #e7e7e7;
-  border: 1px solid red;
 
   .footer__wrap {
     width: 100%;
@@ -23,7 +22,6 @@
     justify-content: center;
 
     .footer__content {
-      border: 1px solid red;
     }
   }
 }

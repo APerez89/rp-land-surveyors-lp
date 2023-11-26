@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
   <div id="button__contain">
-    <div class="button__wrapper">
+    <div class="button__wrap">
       <nuxt-link :to="link">
         {{ message }}
       </nuxt-link>
@@ -18,7 +18,7 @@ defineProps<{
 <style lang="scss" scoped>
 #button__contain {
   margin-top: 25px;
-  .button__wrapper {
+  .button__wrap {
     width: 100%;
     display: flex;
     
