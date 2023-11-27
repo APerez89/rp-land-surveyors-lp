@@ -65,7 +65,7 @@
 #why__contain {
   background-color: var(--off-white);
   font-family: 'Montserrat', sans-serif;
-  padding: 25px 0px;
+  padding: 25px;
 
   .why__wrap {
     max-width: var(--max-width);

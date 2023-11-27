@@ -117,7 +117,7 @@ let active = true;
     display: flex;
     max-width: var(--max-width);
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 10px 25px;
 
     .right__nav {
       display: inline-flex;

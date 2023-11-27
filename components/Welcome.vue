@@ -1,3 +1,15 @@
+<script setup lang="ts">
+const servicesList = [
+  'A-2/Zoning Location Survey',
+  'Topographic Survey Map',
+  'Staking Property',
+  'Elevation Certificates',
+  'Map Of Property',
+  'Outline Boundary'
+]
+
+</script>
+
 <template>
   <div id="welcome__contain" class="main__contain">
     <div class="welcome__wrap">
@@ -7,6 +19,13 @@
           <h1>Richard W. Plain</h1>
           <h2>Land Surveyors</h2>
         </div>
+        <div class="divider"></div>
+        <div class="services__wrap">
+          <div class="services" v-for="(service, index) in servicesList" :key="index">
+            <p>{{ service }}</p>
+          </div>
+        </div>
+        <!-- <div class="divider"></div> -->
         <Button link="contact" message="Contact" />
       </div>
       <div class="img__wrap">
@@ -21,7 +40,7 @@
   .welcome__wrap {
     width: 100%;
     height: 1000px;
-    padding: 50px 0px;
+    padding: 50px 25px;
     max-width: var(--max-width);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -33,8 +52,7 @@
       color: var(--not-black);
 
       .info__wrap {
-        margin-bottom: 15px;
-        
+
         h1 {
           font-size: 4rem;
           font-weight: 700;
@@ -53,6 +71,43 @@
           color: var(--rp-red);
         }
       }
+
+      .divider {
+        width: 100%;
+        height: 2px;
+        background-color: var(--rp-red);
+        margin: 20px 0px;
+      }
+
+      .services__wrap {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-bottom: 15px;
+
+        .services {
+          padding: 10px 15px;
+          position: relative;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          letter-spacing: 1px;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 45%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 5px;
+            height: 5px;
+            background-color: var(--rp-red);
+            border-radius: 50%;
+          }
+        }
+      }
+
     }
     .img__wrap {
       position: relative;

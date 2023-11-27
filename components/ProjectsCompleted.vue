@@ -5,7 +5,7 @@
         <h4>Projects Completed</h4>
       </div>
       <div class="projects__right">
-        <img src="../public/theodolite_trip.png" alt="AI Generated Theodolite on a tripod">
+        <img src="../public/land-surveying.png" alt="AI Generated Theodolite on a tripod">
       </div>
     </div>
 
