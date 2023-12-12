@@ -9,7 +9,7 @@
           <h4>Why</h4>
           <h2>Richard Plain Land Surveyors</h2>
           <div class="copy">
-            <p>With over 70 years of combined experience Richard Plain, Jr. & Edward Plain make up the <span class="highlight">Full Service Survey Company</span> - Richard Plain Land Surveyors, providing land surveys from mapping & staking to elevation certificates and more, all through Fairfield, New Haven and surrounding counties.</p>
+            <p>With over 70 years of combined experience Richard Plain Sr., Jr. & Edward Plain make up the <span class="highlight">Full Service Survey Company</span> - Richard Plain Land Surveyors, providing land surveys from mapping & staking to elevation certificates and more, all through Fairfield, New Haven and surrounding counties.</p>
           </div>
           <div class="button">
             <Button link="about" message="Learn More" />
@@ -147,6 +147,7 @@
           padding: 25px;
           box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
           border-radius: 8px;
+          text-align: center;
           .fact__icon {
             width: 45px;
             color: var(--rp-red);
