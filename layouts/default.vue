@@ -1,7 +1,9 @@
 <template>
   <div class="app__contain">
       <Nav />
-      <slot />
+      <div class="content">
+        <slot />
+      </div>
       <Footer />
          <!-- Youtube Link -->
          <!-- 
@@ -43,14 +45,15 @@
 }
 
 .app__contain {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   font-family: 'Raleway', sans-serif;
   background-color: var(--light-white);
   overflow: hidden;
 
-  .app_wrap {
-    display: flex;
-    position: relative;
+  .content {
+    flex-grow: 1;
   }
 }
 </style>

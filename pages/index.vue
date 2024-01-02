@@ -5,6 +5,7 @@
       <WhyRP />
       <Divider />
       <ProjectsCompleted />
+      <HighlightProjects />
     </div>
   </div>
 </template>

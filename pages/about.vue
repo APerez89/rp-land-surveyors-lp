@@ -9,6 +9,12 @@
   </section>
 </template>
 
+<script setup lang="ts">
+definePageMeta ({
+  layout: 'services'
+})
+</script>
+
 <style lang="scss" scoped>
 #about {
   .about__wrap {
