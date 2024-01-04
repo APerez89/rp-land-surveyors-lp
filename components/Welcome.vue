@@ -1,12 +1,7 @@
 <script setup lang="ts">
-const servicesList = [
-  'A-2/Zoning Location Survey',
-  'Topographic Survey Map',
-  'Staking Property',
-  'Elevation Certificates',
-  'Map Of Property',
-  'Outline Boundary'
-]
+import data from '../composables/rpData';
+
+const serviceList = data.services;
 
 </script>
 
@@ -21,8 +16,8 @@ const servicesList = [
         </div>
         <div class="divider"></div>
         <div class="services__wrap">
-          <div class="services" v-for="(service, index) in servicesList" :key="index">
-            <p>{{ service }}</p>
+          <div class="services" v-for="(service, index) in serviceList" :key="index">
+            <p>{{ service.title }}</p>
           </div>
         </div>
         <!-- <div class="divider"></div> -->
