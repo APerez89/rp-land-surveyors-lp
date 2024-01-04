@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 definePageMeta ({
-  layout: 'services'
+  layout: 'default'
 })
 </script>
 

@@ -9,7 +9,7 @@ const serviceList = data.services;
     <div class="services__contain">
     <h2>Our services</h2>
     <div class="links" v-for="(service, idx) in serviceList" :key="idx">
-      <nuxt-link :to="service.serviceSlug">
+      <nuxt-link :to="`/services/${service.slug}`">
         {{ service.title }}
       </nuxt-link>
     </div>
