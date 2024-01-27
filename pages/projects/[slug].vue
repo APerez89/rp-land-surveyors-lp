@@ -1,8 +1,8 @@
 <template>
-  <section id="service" class="main__contain">
-    <div class="service__contain">
+  <section id="project" class="main__contain">
+    <div class="project__contain">
       <h2>
-        Welcome to {{ serviceInfo?.title }}
+        Welcome to {{ projectInfo?.title }}
       </h2>
     </div>
   </section>
@@ -13,13 +13,13 @@ import data from '../../composables/rpData';
 
 const route = useRoute();
 const { slug } = route.params;
-const serviceInfo = data.services.find(i => i.slug === slug);
+const projectInfo = data.projects.find(i => i.slug === slug);
 
 </script>
 
 <style lang="scss" scoped>
-#service {
-  .service__contain {
+#project {
+  .project__contain {
     width: 100%;
     max-width: var(--max-width);
   }

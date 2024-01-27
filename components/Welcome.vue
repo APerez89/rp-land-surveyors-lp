@@ -14,7 +14,7 @@ const serviceList = data.services;
           <h1>Richard W. Plain</h1>
           <h2>Land Surveyors</h2>
         </div>
-        <div class="divider"></div>
+        <Divider />
         <div class="services__wrap">
           <div class="services" v-for="(service, index) in serviceList" :key="index">
             <p>{{ service.title }}</p>
@@ -66,14 +66,6 @@ const serviceList = data.services;
           color: var(--rp-red);
         }
       }
-
-      .divider {
-        width: 100%;
-        height: 2px;
-        background-color: var(--rp-red);
-        margin: 20px 0px;
-      }
-
       .services__wrap {
         width: 100%;
         display: grid;

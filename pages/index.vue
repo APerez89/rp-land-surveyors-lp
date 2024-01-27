@@ -3,9 +3,8 @@
     <div class="main__wrap">
       <Welcome />
       <WhyRP />
-      <Divider />
+      <Banner />
       <ProjectsCompleted />
-      <HighlightProjects />
     </div>
   </div>
 </template>

@@ -8,6 +8,7 @@
         <div class="why__info">
           <h4>Why</h4>
           <h2>Richard Plain Land Surveyors</h2>
+          <Divider />
           <div class="copy">
             <p>With over 70 years of combined experience Richard Plain Sr., Jr. & Edward Plain make up the <span class="highlight">Full Service Survey Company</span> - Richard Plain Land Surveyors, providing land surveys from mapping & staking to elevation certificates and more, all through Fairfield, New Haven and surrounding counties.</p>
           </div>
@@ -100,8 +101,6 @@
           font-size: 2.3rem;
           color: var(--not-black);
           letter-spacing: 3px;
-          padding-bottom: 15px;
-          border-bottom: 2px solid var(--rp-red);
         }
         
         h4 {
@@ -110,9 +109,7 @@
           font-size: 1rem;
           color: var(--rp-red);
         }
-  
         .copy {
-          margin-top: 25px;
   
           p {
             font-family: 'Raleway', sans-serif;
