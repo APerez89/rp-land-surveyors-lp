@@ -16,16 +16,24 @@
         </div>
         <div class="about__b_b">
           <h2>Meet the Team</h2>
-          <div class="img__contain">
-            <div class="img__wrap">
-              <img src="../public/richard_p.png" alt="">
+          <div class="team__contain">
+            <div class="team__member">
+              <div class="img__wrap">
+                <img src="../public/richard_p.png" alt="">
+              </div>
               <div class="text__wrap">
-                <p>Richard Plain</p>
+                <h3>Richard Plain Jr.</h3>
                 <p>RichardPlain@email.com</p>
               </div>
             </div>
-            <div class="img__wrap">
-              <img src="../public/edward_p.png" alt="">
+            <div class="team__member">
+              <div class="img__wrap">
+                <img src="../public/edward_p.png" alt="">
+              </div>
+              <div class="text__wrap">
+                <h3>Edward Plain</h3>
+                <p>EdwardPlain@email.com</p>
+              </div>
             </div>
           </div>
         </div>
@@ -34,10 +42,13 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 definePageMeta ({
   layout: 'default'
 })
+
+
+
 </script>
 
 <style lang="scss" scoped>
@@ -67,20 +78,45 @@ definePageMeta ({
       .about__b_t {}
       .about__b_b {
 
-        .img__contain {
+        .team__contain {
           display: flex;
-          .img__wrap {
-            border-radius: 50%;
-            position: relative;
-            overflow: hidden;
+          justify-content: space-around;
+
+          .team__member {
             display: flex;
-            box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
-            .text__wrap {
-              width: 100%;
-              height: 100%;
-              border: 1px solid red;
-              position: absolute;
+            flex-direction: column;
+            position: relative;
+            // padding: 7px;
+            background-color: var(--dark-blue);
+            border-radius: 160px;
+            transition: all 0.3s ease-in-out;
+
+            .img__wrap {
+              border-radius: 50%;
+              position: relative;
+              overflow: hidden;
               display: flex;
+              box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
+              z-index: 1;
+            }
+            .text__wrap {
+              height: calc(100% - 15px);
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              color: var(--light-white);
+              position: absolute;
+              padding: 50px;
+              opacity: 0;
+              transition: all 0.3s ease-in-out;
+            }
+          }
+          .animate {
+            background-color: var(--rp-red);
+            padding-bottom: 150px;
+
+            .text__wrap {
+              opacity: 1;
             }
           }
         }
@@ -88,4 +124,5 @@ definePageMeta ({
     }
   }
 }
+
 </style>
